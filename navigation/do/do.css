@@ -1,0 +1,13 @@
+li {
+	display: inline;
+}
+a {
+	padding-right: 40px;
+}
+li a
+{
+	text-decoration: none;
+}
+li a:hover {
+	text-decoration: underline;
+}
