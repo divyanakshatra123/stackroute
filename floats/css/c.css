@@ -1,0 +1,27 @@
+.bro {
+margin: auto;
+width: 80%;
+min-width: 600px; /* without this try to minimze and maximize the page */
+background: blue; /*to avoid that white block bro! u got to overflow */
+overflow: hidden;	
+}
+aside {
+	background: pink;
+	
+	float: left;
+	height: 200px;
+
+	}
+
+.content {
+	float: left;
+	background: grey;
+	
+	height: 200px;
+	
+
+}
+aside ul
+{
+	list-style: lower-roman;
+}
