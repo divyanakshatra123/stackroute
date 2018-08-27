@@ -1,0 +1,43 @@
+h2 {
+	margin: auto;
+	width: 600px;
+}
+.content
+{   display: flex;
+	justify-content: flex-end;
+
+}
+.b {
+	margin : 10px;
+	font-family: sans-serif;
+
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: underline;
+}
+.column
+{
+	display: flex;
+
+}
+.c {
+	margin-left: : 100px;
+	margin-bottom:  200px;
+	margin: 10px;
+	height: 100vh;
+}
+.c1{
+	background: pink;
+}
+.c2{
+	background: yellow;
+}
+.c3{
+	background: grey;
+}
+
+
