@@ -1,0 +1,389 @@
+body {
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height:1.5;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  flex-wrap: wrap;
+  height: 100%;
+}
+html{
+  height: 100%;
+}
+nav {
+  position: fixed;
+
+}
+/*common to all*/
+.container
+{
+  width: 80%;
+  margin: auto; /* moves to the middle*/
+  
+
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header{
+  background-color: black;
+  color: #f4f4f4;
+  
+  min-height: 50px; /*responsiveness*/
+  
+  padding-bottom: 0px;
+  top: 0px; /*to stick on top*/
+  position: sticky;
+
+
+}
+header h1{
+  margin-top: 5px;
+  font-size: 20px;
+}
+/*links inside the header*/
+header a{
+  color: white;
+  text-decoration: none ;/* no underline!*/
+  text-transform: uppercase;
+  font-size: 12px;
+  
+  margin: 5px; /*to make the list items to have space in between*/
+
+}
+/*to make the list items horizontal */
+header ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none; /*removing the bullets*/
+
+} 
+
+/* nav positioning */
+
+nav ul li a:hover,
+nav ul li a.active{
+  color: red;
+font-weight: bold;
+margin-right: 10px;
+}
+header a:hover{
+  font-weight: bold;
+}
+
+img{
+  width: 100%;
+}
+.d {
+  padding: 0px;
+  width: 100%;
+}
+/*got pic*/
+#show{
+  min-height: 400px ;/*to be responsive*/
+  
+  
+  
+  color: #f4f4f4;
+  background-size:cover; /*this will let the picture  cover the whole window */
+  text-align: center;
+
+  
+  
+}
+#show h1{
+  font-family: Open Sans;
+  margin-top: 0px;
+  color: grey;
+  
+  font-size: 30px;
+}
+#show p{
+  padding: 0px;
+  font-family: Kaushan Script;
+}
+/* newsletter*/
+
+/*boxes*/
+
+#boxes{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap:  wrap;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: lobster;
+  background: #222;
+
+
+}
+#boxes h5{
+  padding: 0;
+  color: grey;
+  margin-top: 0;
+}
+#boxes h1 {
+  margin-bottom: 0px;
+}
+.box1{
+  width: 400px;
+  margin-bottom: 50px;
+  
+}
+.box2{
+  width: 400px;
+}
+.box3{
+  width: 400px;
+}
+.box4{
+  width: 400px;
+  
+}
+.box5{
+  width: 400px;
+}
+.box6{
+  width: 400px;
+}
+footer{
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+}
+
+:root {
+  --background: rgba(0, 0, 0, 1);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #222;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.content {
+  height: 200vh;
+  background-image: url(//unsplash.it/1000/1000);
+  background-color: #333;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+/* navigation styles start here */
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: red;
+}
+
+.nav-toggle:checked ~ ul {
+  display: block;
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+.d {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image:  url("nerd.jpeg");
+
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 13px;
+    background-attachment: fixed;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+
+  .logo {
+    grid-column: 2 / 3;
+  }
+  
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px ;
+  border: 5px solid #35424a;
+ background: rgba(0, 0, 0, 0.8);
+}
+.foot li {
+  color: white;
+  display: flex;
+  
+
+}
+.icon{
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+color: grey;
+line-height: 10px;
+
+
+}
+.icon li{
+  padding: 10px 10px;
+  
+
+}
+footer li: first-child{
+  color: grey;
+}
+.icon i{
+  color: white;
+  
+  margin-bottom: 0;
+}
+.foot li: first-child{
+   color: grey;
+
+}
+  
+
