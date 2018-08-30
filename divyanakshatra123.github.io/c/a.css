@@ -81,6 +81,9 @@ img{
 .d {
   padding: 0px;
   width: 100%;
+   background-size:cover;
+   margin-top: 20px;
+  
 }
 /*got pic*/
 #show{
@@ -95,10 +98,10 @@ img{
   
   
 }
-#show h1{
-  font-family: Open Sans;
+#show h2{
+  font-family: 'Monoton', cursive;
   margin-top: 0px;
-  color: grey;
+  
   
   font-size: 30px;
 }
@@ -149,6 +152,7 @@ img{
   
 }
 .box5{
+  border-radius: 10%;
   width: 400px;
 }
 .box6{
@@ -193,7 +197,7 @@ body {
 /* navigation styles start here */
 
 header {
-  background: var(--background);
+  
   text-align: center;
   position: fixed;
   z-index: 999;
@@ -279,22 +283,23 @@ nav a:hover {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
-.d {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+ /*.d {
+    
     background-image:  url("nerd.jpeg");
+    background-image: contain;
 
-    /* Set a specific height */
+    /* Set a specific height 
     height: 100%;
     width: 100%;
-    /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow-x: hidden;
-    margin-top: 13px;
+    margin-top: 20px;
     background-attachment: fixed;
-}
+}  
+*/
 
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
@@ -369,7 +374,7 @@ line-height: 10px;
 
 }
 .icon li{
-  padding: 10px 10px;
+  padding: 5px;
   
 
 }
